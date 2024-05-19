@@ -1,5 +1,6 @@
 @import url(https://fonts.googleapis.com/css?family=Roboto:400,500,700,900,300);
 
+/* General body styling */
 body {
   width: 100%;
   height: 100%;
@@ -10,6 +11,7 @@ body {
   color: #fff;
 }
 
+/* Search bar styling */
 #search-bar {
   width: 612px;
   height: 50px;
@@ -22,6 +24,7 @@ body {
   left: 20px;
 }
 
+/* City name input field styling */
 #city-name {
   width: 512px;
   height: 50px;
@@ -32,20 +35,21 @@ body {
   text-indent: 25px;
 }
 
-#city-name:focus
-{
+/* Remove outline on focus for city name input */
+#city-name:focus {
   border: none;
   outline: none;
 }
 
-#city-name::placeholder
-{
- color: #fff; 
- font-size: 25px;
- font-weight: 100;
+/* Placeholder styling for city name input */
+#city-name::placeholder {
+  color: #fff;
+  font-size: 25px;
+  font-weight: 100;
 }
 
-#sea-button{
+/* Search button styling */
+#sea-button {
   width: 80px;
   height: 50px;
   border: none;
@@ -55,63 +59,58 @@ body {
   font-size: 15px;
 }
 
+/* Widget container styling */
 .widget-container {
   width: 612px;
   height: 412px;
   display: block;
   background-color: #313e45;
   border-radius: 25px;
-  /*   border: 5px solid #eceff1; */
   margin-left: 20px;
 }
 
+/* Widget division into four quarters */
 
-/* Widget 4 Quarter Division here */
-
+/* Top-left section styling */
 .top-left {
   height: 60%;
   width: 50%;
-  /*   background-color:red; */
   padding: 55px 0 0 70px;
   display: inline-block;
 }
 
+/* Top-right section styling */
 .top-right {
   height: 60%;
   width: 50%;
-  /*   background-color: blue; */
   float: right;
   padding: 55px 0 0 0;
 }
 
+/* Bottom-left section styling */
 .bottom-left {
   height: 40%;
   width: 45%;
-  /*   background-color:orange; */
   float: left;
   margin: 0;
   padding: 40px 0 0 50px;
 }
 
+/* Bottom-right section styling */
 .bottom-right {
   height: 40%;
   width: 55%;
-  /*   background-color: brown; */
   float: right;
   padding: 25px 0 0 60px;
 }
 
-h1,
-h2,
-h3,
-p {
+/* General heading and paragraph styling */
+h1, h2, h3, p {
   margin: 0;
   padding: 0;
 }
 
-
-/* Top-left Div CSS */
-
+/* Top-left section specific styling */
 #city {
   font-weight: 900;
   font-size: 25px;
@@ -141,6 +140,7 @@ p {
   margin-top: 20px;
 }
 
+/* Link styling in top-left section */
 .top-left>a {
   text-decoration: none;
   color: white;
@@ -150,9 +150,7 @@ p {
   color: #b0bec5;
 }
 
-
-/* Top-Right Div CSS */
-
+/* Top-right section specific styling */
 #weather-status {
   font-size: 18px;
   font-weight: 300;
@@ -167,9 +165,7 @@ p {
   margin: 15px auto 0 auto;
 }
 
-
-/* Horizontal-Half-divider */
-
+/* Divider styling */
 .horizontal-half-divider {
   width: 100%;
   height: 3px;
@@ -187,13 +183,8 @@ p {
   padding: 0;
 }
 
-
-/* Bottom-left CSS */
-
-#temperature,
-#celsius,
-#temp-divider,
-#fahrenheit {
+/* Bottom-left section specific styling */
+#temperature, #celsius, #temp-divider, #fahrenheit {
   display: inline;
   vertical-align: middle;
 }
@@ -213,23 +204,16 @@ p {
   color: #b0bec5;
 }
 
-#celsius,
-#temp-divider,
-#fahrenheit {
+#celsius, #temp-divider, #fahrenheit {
   font-size: 30px;
   font-weight: 800;
 }
 
-#celsius:hover,
-#fahrenheit:hover {
+#celsius:hover, #fahrenheit:hover {
   cursor: pointer;
 }
 
-
-
-
-/* Bottom-Right CSS */
-
+/* Bottom-right section specific styling */
 .other-details-key {
   float: left;
   font-size: 16px;
@@ -243,6 +227,7 @@ p {
   margin-left: 40px;
 }
 
+/* Link styling in bottom-right section */
 .watermark-link {
   text-decoration: none;
   color: #b0bec5;
@@ -259,7 +244,8 @@ p {
   font-weight: 400;
 }
 
-#Forcast-data{
+/* Forecast data section styling */
+#Forcast-data {
   height: 600px;
   width: 820px;
   background-color: #263238;
@@ -267,11 +253,10 @@ p {
   top: 80px;
   right: 20px;
   color: #fff;
-  /* overflow-y: hidden; */
   overflow-x: hidden;
 }
 
-table{
+table {
   width: 800px;
   table-layout: auto;
   text-align: left;
@@ -282,7 +267,7 @@ tr {
   background-color: antiquewhite;
 }
 
-tr:nth-child(1) td{
+tr:nth-child(1) td {
   font-size: 20px;
   font-weight: 800;
 }
